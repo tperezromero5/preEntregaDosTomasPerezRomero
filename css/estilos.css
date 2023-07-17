@@ -22,14 +22,6 @@ propiedad:vañor
 .FondoCarrusel{
     background-color: #4CAF50;
 }
-.Navegacion .ListaNav .ListaItems a{
-    color: #FFFFFF;
-    font-size: 1rem;
-    background-color: #4CAF50;
-    display: inline-block;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-}
 
 .ImagenesCarrusel{
 
@@ -41,16 +33,6 @@ propiedad:vañor
     border: 1px solid black;
     object-fit: cover;
     margin-left: 8px;
-}
-
-.ListaItems{
-    display: inline-block;
-    list-style:none;
-    margin-left: 0px;
-    padding-right: 0px;
-    background-color: #4CAF50;
-    font-family: "Poppins", sans-serif;;;
-    top: 10px;
 }
 
 .SectionConvenios{
@@ -80,10 +62,6 @@ font-size: 0.75rem;
     color: #FFFFFF;
     font-family: "Poppins", sans-serif;
 }
-.Logo{
-    margin-left: 400px;
-    background-color:#FFFFFF;
-}
 .SubtituloActividades{
 font-family: "Poppins", sans-serif;
 font-size: 1.5rem;
@@ -109,30 +87,9 @@ text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
 }
-.Header{    top: 10px;
+.Header .navbar{
 background-color: #FFFFFF;
 }
-.IconoWsp{
-    width: 150px;
-    height: 50px;
-    background-color: #4CAF50;
-    border: 1px solid black;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-.ListaNav{
-    position: fixed;
-    top: 10px;
-    z-index: 10;
-}
-.Header{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-}
-.Navegacion{
-    display: flex;
+.navbar-light .navbar-nav .nav-link.color-verde{
+    color: #4CAF50;
 }
