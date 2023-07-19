@@ -52,12 +52,10 @@ footer{
     font-size: 1rem;
 }
 
-.Sect .ImagenesLesiones{
-    display: inline-block;
-    width: 10vh;
-    height: 10vh
+.TituloContacto{
+    color: #FFFFFF;
+    text-align: center;
 }
-
 .SectionConvenios .ImagenesConvenios{
     display: inline-block;
     width: 40vh;
@@ -95,6 +93,7 @@ text-align: center;
     background-color: #043905;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
+    color: #FFFFFF;
 }
 .navbar .navbar-nav .nav-link.color-verde{
     color:#4cae4f;
@@ -108,7 +107,7 @@ text-align: center;
     background-color: #043905;
 }
 .imagen-pilates{
-    width: 70vh;
+    width: 50vh;
     height: 50vh;
 }
 .imagen-gimnasio{
@@ -121,4 +120,21 @@ text-align: center;
 }
 .texto-info{
     color: #FFFFFF;
+    text-align: center;
+}
+.TituloActividades{
+    color: #FFFFFF;
+    text-align: center;
+}
+.subtituloInstalaciones{
+    color: #FFFFFF;
+    text-align: center;
+}
+.subtituloMapa{
+    color: #FFFFFF;
+    text-align: center;
+}
+.textoLesiones{
+    color: #FFFFFF;
+    text-align: center;
 }
