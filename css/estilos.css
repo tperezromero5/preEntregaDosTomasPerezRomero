@@ -13,49 +13,43 @@ propiedad:vañor
 } 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #043905;
 }
 header{
     height: 20%;
 }
 main{
     height: 60%;
+    background-color: #043905;
 }
 footer{
 
     height: 20%;
+    text-align: center;
+    background-color: #043905; 
+    padding-top: 20px;
+    color: #FFFFFF;
 }
 .TextoPrincipalInicio{
     color: #FFFFFF;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     background-color: #043905;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    padding: 0;
-    margin: 0;
 }
-.FondoCarrusel{
-    background-color: #000000;
-}
-
-.ImagenesCarrusel{
-
-    display: inline-block;
-    width: 15%;
-    height: 70vh;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    object-fit: cover;
-    margin-left: 8px;
-}
-
 .SectionConvenios{
     text-align: center;
     font-size: 2rem;
     background-color: #043905;
     color: #FFFFFF;
     font-family: "Poppins", sans-serif;
+}
+.convenios-titulo{
+    font-size: 1.5rem;
+}
+.convenios-subtitulo{
+    font-size: 1rem;
 }
 
 .Sect .ImagenesLesiones{
@@ -68,7 +62,7 @@ footer{
     display: inline-block;
     width: 40vh;
     height: 40vh;
-    border: 1px solid rgb(0, 0, 0);
+
 }
 
 .Footer{
@@ -103,8 +97,28 @@ text-align: center;
     font-weight: 700;
 }
 .navbar .navbar-nav .nav-link.color-verde{
-    color: rgb(76, 174, 79);
+    color:#4cae4f;
 }
 .bg-verde{
     background-color: #043905;
+}
+.container-fluid .contenedor-index{
+    margin: 0;
+    padding: 0;
+    background-color: #043905;
+}
+.imagen-pilates{
+    width: 70vh;
+    height: 50vh;
+}
+.imagen-gimnasio{
+    width: 50vh;
+    height: 50vh;
+}
+.imagen-kinesiologia{
+    width: 50vh;
+    height: 50vh,
+}
+.texto-info{
+    color: #FFFFFF;
 }
