@@ -5,73 +5,62 @@ propiedad:valor
 propiedad:vañor
 }
 */
-@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@400;500;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+} 
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #043905;
+}
+header{
+    height: 20%;
+}
+main{
+    height: 60%;
+    background-color: #043905;
+}
+footer{
+
+    height: 20%;
+    text-align: center;
+    background-color: #043905; 
+    padding-top: 20px;
+    color: #FFFFFF;
 }
 .TextoPrincipalInicio{
     color: #FFFFFF;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
-    background-color: #4CAF50;
+    background-color: #043905;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
 }
-.FondoCarrusel{
-    background-color: #4CAF50;
-}
-.Navegacion .ListaNav .ListaItems a{
-    color: #FFFFFF;
-    font-size: 1rem;
-    background-color: #4CAF50;
-    display: inline-block;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-}
-
-.ImagenesCarrusel{
-
-    display: inline-block;
-    width: 15%;
-    height: 70vh;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    object-fit: cover;
-    margin-left: 8px;
-}
-
-.ListaItems{
-    display: inline-block;
-    list-style:none;
-    margin-left: 0px;
-    padding-right: 0px;
-    background-color: #4CAF50;
-    font-family: "Poppins", sans-serif;;;
-    top: 10px;
-}
-
 .SectionConvenios{
     text-align: center;
     font-size: 2rem;
-    background-color: #4CAF50;
+    background-color: #043905;
     color: #FFFFFF;
     font-family: "Poppins", sans-serif;
 }
-
-.Sect .ImagenesLesiones{
-    display: inline-block;
-    width: 10vh;
-    height: 10vh
+.convenios-titulo{
+    font-size: 1.5rem;
+}
+.convenios-subtitulo{
+    font-size: 1rem;
 }
 
+.TituloContacto{
+    color: #FFFFFF;
+    text-align: center;
+}
 .SectionConvenios .ImagenesConvenios{
     display: inline-block;
     width: 40vh;
     height: 40vh;
-    border: 1px solid black;
+
 }
 
 .Footer{
@@ -80,59 +69,72 @@ font-size: 0.75rem;
     color: #FFFFFF;
     font-family: "Poppins", sans-serif;
 }
-.Logo{
-    margin-left: 400px;
-    background-color:#FFFFFF;
-}
 .SubtituloActividades{
 font-family: "Poppins", sans-serif;
 font-size: 1.5rem;
-background-color: #4CAF50;
+background-color: #043905;
 color: #FFFFFF;
 text-align: center;
 }
 .TituloActividades{
     font-family: "Poppins", sans-serif;
 font-size: 2rem;
-background-color: #4CAF50;
+background-color: #043905;
 text-align: center;
 }
 .DivInstalaciones{
-    background-color: #4CAF50;
+    background-color: #043905;
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
 }
 .TituloInstalaciones{ 
     font-size: 2rem;
     text-align: center;
-    background-color: #4CAF50;
+    background-color: #043905;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
+    color: #FFFFFF;
 }
-.Header{    top: 10px;
-background-color: #FFFFFF;
+.navbar .navbar-nav .nav-link.color-verde{
+    color:#4cae4f;
 }
-.IconoWsp{
-    width: 150px;
-    height: 50px;
-    background-color: #4CAF50;
-    border: 1px solid black;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
+.bg-verde{
+    background-color: #043905;
 }
-.ListaNav{
-    position: fixed;
-    top: 10px;
-    z-index: 10;
-}
-.Header{
-    padding: 0;
+.container-fluid .contenedor-index{
     margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
+    padding: 0;
+    background-color: #043905;
 }
-.Navegacion{
-    display: flex;
+.imagen-pilates{
+    width: 50vh;
+    height: 50vh;
+}
+.imagen-gimnasio{
+    width: 50vh;
+    height: 50vh;
+}
+.imagen-kinesiologia{
+    width: 50vh;
+    height: 50vh,
+}
+.texto-info{
+    color: #FFFFFF;
+    text-align: center;
+}
+.TituloActividades{
+    color: #FFFFFF;
+    text-align: center;
+}
+.subtituloInstalaciones{
+    color: #FFFFFF;
+    text-align: center;
+}
+.subtituloMapa{
+    color: #FFFFFF;
+    text-align: center;
+}
+.textoLesiones{
+    color: #FFFFFF;
+    text-align: center;
 }
