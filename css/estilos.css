@@ -36,7 +36,7 @@ footer {
   font-weight: 700;
 }
 
-.SectionConvenios {
+.Convenios {
   text-align: center;
   font-size: 2rem;
   background-color: #043905;
@@ -57,7 +57,7 @@ footer {
   text-align: center;
 }
 
-.SectionConvenios .ImagenesConvenios {
+.Convenios .ImagenesConvenios {
   display: inline-block;
   width: 40vh;
   height: 40vh;
