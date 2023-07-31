@@ -27,7 +27,7 @@ footer {
   color: #FFFFFF;
 }
 
-.TextoPrincipalInicio {
+.contenedor-index .TextoPrincipalInicio {
   color: #FFFFFF;
   font-size: 1.5rem;
   text-align: center;
@@ -35,29 +35,20 @@ footer {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
-
-.Convenios {
+.contenedor-index .Convenios {
   text-align: center;
   font-size: 2rem;
   background-color: #043905;
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
 }
-
-.convenios-titulo {
+.contenedor-index .Convenios .convenios-titulo {
   font-size: 1.5rem;
 }
-
-.convenios-subtitulo {
+.contenedor-index .Convenios .convenios-subtitulo {
   font-size: 1rem;
 }
-
-.TituloContacto {
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.Convenios .ImagenesConvenios {
+.contenedor-index .Convenios .ImagenesConvenios {
   display: inline-block;
   width: 40vh;
   height: 40vh;
@@ -65,7 +56,7 @@ footer {
 
 .Footer {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
 }
@@ -85,13 +76,12 @@ footer {
   text-align: center;
 }
 
-.DivInstalaciones {
-  background-color: #043905;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+.MainInstalciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.TituloInstalaciones {
+.MainInstalciones .TituloInstalaciones {
   font-size: 2rem;
   text-align: center;
   background-color: #043905;
@@ -99,18 +89,19 @@ footer {
   font-weight: 700;
   color: #FFFFFF;
 }
+.MainInstalciones .DivInstalaciones {
+  background-color: #043905;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 .navbar .navbar-nav .nav-link.color-verde {
   color: #4cae4f;
 }
 
 .bg-verde {
-  background-color: #043905;
-}
-
-.container-fluid .contenedor-index {
-  margin: 0;
-  padding: 0;
   background-color: #043905;
 }
 
@@ -152,4 +143,9 @@ footer {
 .textoLesiones {
   color: #FFFFFF;
   text-align: center;
+}
+
+.SectionLesiones .ImagenesLesiones {
+  height: 50vh;
+  width: 50vh;
 }/*# sourceMappingURL=estilos.css.map */
