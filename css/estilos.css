@@ -76,11 +76,6 @@ footer {
   text-align: center;
 }
 
-.MainInstalciones {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .MainInstalciones .TituloInstalaciones {
   font-size: 2rem;
   text-align: center;
@@ -94,7 +89,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+.MainInstalciones .DivInstalaciones .multimedia-instalaciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vh;
+  height: 70vh;
 }
 
 .navbar .navbar-nav .nav-link.color-verde {
