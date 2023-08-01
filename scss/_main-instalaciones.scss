@@ -1,0 +1,32 @@
+
+.MainInstalaciones{
+    .TituloInstalaciones{
+    font-size: $letra-titulo;
+    text-align:$centrar-texto;
+    background-color:$color-fondo;
+    font-family:$fuente-principal;
+    font-weight: 700;
+    color:$color-letras;
+}
+    .DivInstalaciones{
+    background-color:$color-fondo;
+    display:flex;
+    justify-content:$centrar-texto;
+    align-items:$centrar-texto;
+        .multimedia-instalaciones{
+        display:flex;
+        justify-content:$centrar-texto;
+        align-items:$centrar-texto;
+        width:50vh;
+        height:70vh;
+    }
+    .subtituloInstalaciones{
+        color:$color-letras;
+        text-align:$centrar-texto;
+    }
+    .subtituloMapa{
+        color:$color-letras;
+        text-align:$centrar-texto;
+    }
+}
+}

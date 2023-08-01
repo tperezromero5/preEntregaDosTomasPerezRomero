@@ -1,0 +1,34 @@
+.contenedor-index{
+    .tituloInicio{
+    color: $color-letras;
+    font-size:$letra-titulo ;
+    text-align: $centrar-texto;
+    background-color: $color-fondo;
+    font-family: $fuente-principal;
+    font-weight: 700;
+    }
+    .TextoPrincipalInicio{
+    color: $color-letras;
+    font-size: $letra-texto;
+    text-align: $centrar-texto;
+    background-color: $color-fondo;
+    font-family: $fuente-principal;
+}
+    .Convenios{
+    text-align:$centrar-texto;
+    background-color:$color-fondo;
+    color:$color-letras;
+    font-family:$fuente-principal;
+        .convenios-titulo{
+        font-size:$letra-titulo;
+    }
+        .convenios-subtitulo{
+        font-size:$letra-subtitulo;
+    }
+        .ImagenesConvenios{
+        display:inline-block;
+        width:40vh;
+        height:40vh;
+    }
+}
+}

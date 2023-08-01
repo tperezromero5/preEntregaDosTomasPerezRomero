@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{
+    font-family: $fuente-principal;
+    background-color: $color-fondo;
+}
+header{
+    height: 20%;
+}
+main{
+    height: 60%;
+    background-color: $color-fondo;
+}
+footer{
+    height: 20%;
+    text-align: $centrar-texto;
+    background-color: $color-fondo; 
+    padding-top: 20px;
+    color: $color-letras;
+}

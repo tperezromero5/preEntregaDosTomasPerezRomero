@@ -1,0 +1,35 @@
+.mainActividades{
+    .TituloActividades{
+        font-family:$fuente-principal;
+    font-size:$letra-titulo;
+    background-color:$color-fondo;
+    text-align:$centrar-texto;
+    color:$color-letras;
+    }
+    .sectionActividades{
+        .SubtituloActividades{
+        font-family:$fuente-principal;
+        font-size:$letra-subtitulo;
+        background-color:$color-fondo;
+        color:$color-letras;
+        text-align:$centrar-texto;
+        }
+        .texto-info{
+            color:$color-letras;
+            text-align:$centrar-texto;
+            font-size:$letra-texto ;
+        }
+        .imagen-pilates{
+            width:50vh;
+            height:50vh;
+        }
+        .imagen-gimnasio{
+            width:50vh;
+            height:50vh;
+        }
+        .imagen-kinesiologia{
+            width:50vh;
+            height:50vh,
+        }
+    }
+}
