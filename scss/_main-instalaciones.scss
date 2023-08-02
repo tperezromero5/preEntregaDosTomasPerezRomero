@@ -3,13 +3,13 @@
     .TituloInstalaciones{
     font-size: $letra-titulo;
     text-align:$centrar-texto;
-    background-color:$color-fondo;
+    background-color:map-get($colores, fondo );
     font-family:$fuente-principal;
     font-weight: 700;
-    color:$color-letras;
+    color:map-get($colores, letras );
 }
     .DivInstalaciones{
-    background-color:$color-fondo;
+    background-color:map-get($colores, fondo );
     display:flex;
     justify-content:$centrar-texto;
     align-items:$centrar-texto;
@@ -21,11 +21,11 @@
         height:70vh;
     }
     .subtituloInstalaciones{
-        color:$color-letras;
+        color:map-get($colores, letras );
         text-align:$centrar-texto;
     }
     .subtituloMapa{
-        color:$color-letras;
+        color:map-get($colores, letras );
         text-align:$centrar-texto;
     }
 }

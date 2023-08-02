@@ -1,0 +1,32 @@
+.mainContacto{
+    background-color:map-get($colores, fondo );
+    justify-content:$centrar-texto;
+    align-items:$centrar-texto;
+    .TituloContacto{
+        text-align: $centrar-texto;
+        color: map-get($colores, letras );
+    }
+    .Formulario{
+        justify-content:$centrar-texto;
+        align-items:$centrar-texto;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px;
+        .divFormulario{
+            padding: 10px;
+            color: black;
+            .boton{
+                border-radius: 0;
+                background-color: #4cae4f;
+                padding: 10px;
+            }
+            .formularioMapa{
+                border-radius: 0;
+                background-color: #4cae4f;
+                input ::placeholder{
+                    color: black;
+                }
+            }
+        }
+    }
+}

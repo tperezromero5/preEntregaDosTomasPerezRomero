@@ -5,19 +5,19 @@
 } 
 body{
     font-family: $fuente-principal;
-    background-color: $color-fondo;
+    background-color: map-get($colores, fondo );
 }
 header{
     height: 20%;
 }
 main{
     height: 60%;
-    background-color: $color-fondo;
+    background-color:map-get($colores, fondo );
 }
 footer{
     height: 20%;
     text-align: $centrar-texto;
-    background-color: $color-fondo; 
+    background-color:map-get($colores, fondo ); 
     padding-top: 20px;
-    color: $color-letras;
+    color: map-get($colores, letras );
 }

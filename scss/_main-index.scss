@@ -1,23 +1,23 @@
 .contenedor-index{
     .tituloInicio{
-    color: $color-letras;
+    color: map-get($colores, letras );
     font-size:$letra-titulo ;
     text-align: $centrar-texto;
-    background-color: $color-fondo;
+    background-color: map-get($colores, fondo );
     font-family: $fuente-principal;
     font-weight: 700;
     }
     .TextoPrincipalInicio{
-    color: $color-letras;
+    color: map-get($colores, letras );
     font-size: $letra-texto;
     text-align: $centrar-texto;
-    background-color: $color-fondo;
+    background-color: map-get($colores, fondo );
     font-family: $fuente-principal;
 }
     .Convenios{
     text-align:$centrar-texto;
-    background-color:$color-fondo;
-    color:$color-letras;
+    background-color:map-get($colores, fondo );
+    color:map-get($colores, letras );
     font-family:$fuente-principal;
         .convenios-titulo{
         font-size:$letra-titulo;

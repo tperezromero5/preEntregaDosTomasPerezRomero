@@ -1,6 +1,6 @@
 .Footer{
     text-align:$centrar-texto;
     font-size: 1rem;
-        color:$color-letras;
+        color:map-get($colores, letras );
         font-family:$fuente-principal;
     }

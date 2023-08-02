@@ -133,11 +133,57 @@ footer {
   text-align: center;
 }
 
-.SectionLesiones .ImagenesLesiones {
+.mainlesiones {
+  color: #FFFFFF;
+  color: #FFFFFF;
+}
+.mainlesiones .divTituloLesiones {
+  color: #FFFFFF;
+  color: #FFFFFF;
+  text-align: center;
+}
+.mainlesiones .divTituloLesiones .TituloLesiones {
+  color: #FFFFFF;
+  color: #FFFFFF;
+}
+.mainlesiones .SectionLesiones .divLesiones .ImagenesLesiones {
   height: 50vh;
   width: 50vh;
 }
-.SectionLesiones .textoLesiones {
+
+.textoLesiones {
   color: #FFFFFF;
   text-align: center;
+} /*no anido porque se reutiliza la clase*/
+.mainContacto {
+  background-color: #043905;
+  justify-content: center;
+  align-items: center;
+}
+.mainContacto .TituloContacto {
+  text-align: center;
+  color: #FFFFFF;
+}
+.mainContacto .Formulario {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+.mainContacto .Formulario .divFormulario {
+  padding: 10px;
+  color: black;
+}
+.mainContacto .Formulario .divFormulario .boton {
+  border-radius: 0;
+  background-color: #4cae4f;
+  padding: 10px;
+}
+.mainContacto .Formulario .divFormulario .formularioMapa {
+  border-radius: 0;
+  background-color: #4cae4f;
+}
+.mainContacto .Formulario .divFormulario .formularioMapa input ::placeholder {
+  color: black;
 }/*# sourceMappingURL=estilos.css.map */

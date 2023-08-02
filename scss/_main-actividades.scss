@@ -2,20 +2,20 @@
     .TituloActividades{
         font-family:$fuente-principal;
     font-size:$letra-titulo;
-    background-color:$color-fondo;
+    background-color:map-get($colores, fondo );
     text-align:$centrar-texto;
-    color:$color-letras;
+    color:map-get($colores, letras );
     }
     .sectionActividades{
         .SubtituloActividades{
         font-family:$fuente-principal;
         font-size:$letra-subtitulo;
-        background-color:$color-fondo;
-        color:$color-letras;
+        background-color:map-get($colores, fondo );
+        color:map-get($colores, letras );
         text-align:$centrar-texto;
         }
         .texto-info{
-            color:$color-letras;
+            color:map-get($colores, letras );
             text-align:$centrar-texto;
             font-size:$letra-texto ;
         }
