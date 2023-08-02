@@ -1,24 +1,20 @@
-.mainlesiones{
+.divTituloLesiones{
     color: $color-letras;
     color:map-get($colores, letras );
-    .divTituloLesiones{
+    text-align: $centrar-texto;
+    .TituloLesiones{
         color: $color-letras;
         color:map-get($colores, letras );
-        text-align: $centrar-texto;
-        .TituloLesiones{
-            color: $color-letras;
-            color:map-get($colores, letras );
         }
     }
-    .SectionLesiones{
-        .divLesiones{
-            .ImagenesLesiones{
-                height: 50vh;
-                width: 50vh;
-            }
+.SectionLesiones{
+    text-align: center;
+    .ImagenesLesiones{
+        height: 30vh;
+        width: 30vh;
+        
         }
     }
-}
 .textoLesiones{
     color:map-get($colores, letras );
     text-align:$centrar-texto;

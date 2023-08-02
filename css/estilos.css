@@ -69,6 +69,10 @@ footer {
   display: inline-block;
   width: 40vh;
   height: 40vh;
+  transition: height 2s;
+}
+.contenedor-index .Convenios .ImagenesConvenios:hover {
+  height: 60vh;
 }
 
 .mainActividades .TituloActividades {
@@ -133,22 +137,22 @@ footer {
   text-align: center;
 }
 
-.mainlesiones {
-  color: #FFFFFF;
-  color: #FFFFFF;
-}
-.mainlesiones .divTituloLesiones {
+.divTituloLesiones {
   color: #FFFFFF;
   color: #FFFFFF;
   text-align: center;
 }
-.mainlesiones .divTituloLesiones .TituloLesiones {
+.divTituloLesiones .TituloLesiones {
   color: #FFFFFF;
   color: #FFFFFF;
 }
-.mainlesiones .SectionLesiones .divLesiones .ImagenesLesiones {
-  height: 50vh;
-  width: 50vh;
+
+.SectionLesiones {
+  text-align: center;
+}
+.SectionLesiones .ImagenesLesiones {
+  height: 30vh;
+  width: 30vh;
 }
 
 .textoLesiones {
@@ -185,5 +189,5 @@ footer {
   background-color: #4cae4f;
 }
 .mainContacto .Formulario .divFormulario .formularioMapa input ::placeholder {
-  color: black;
+  color: black; /*intente cambiar el color de la fuente del placeholder pero desde coder ask me dijeron que  no es posible utilizando html y css*/
 }/*# sourceMappingURL=estilos.css.map */

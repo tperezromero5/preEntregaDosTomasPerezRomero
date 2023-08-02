@@ -1,4 +1,4 @@
-
+@import 'mixins.scss';
 .MainInstalaciones{
     .TituloInstalaciones{
     font-size: $letra-titulo;
@@ -10,9 +10,7 @@
 }
     .DivInstalaciones{
     background-color:map-get($colores, fondo );
-    display:flex;
-    justify-content:$centrar-texto;
-    align-items:$centrar-texto;
+    @include flex-align-center (center,center);
         .multimedia-instalaciones{
         display:flex;
         justify-content:$centrar-texto;

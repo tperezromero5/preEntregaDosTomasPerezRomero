@@ -1,0 +1,5 @@
+@mixin flex-align-center($medio1,$medio2){
+    display: flex;
+    justify-content:$medio2;
+    align-items:$medio2;
+}

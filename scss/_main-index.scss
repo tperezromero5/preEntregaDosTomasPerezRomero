@@ -29,6 +29,8 @@
         display:inline-block;
         width:40vh;
         height:40vh;
+        transition: height 2s;
     }
+    .ImagenesConvenios:hover{ height: 60vh;}
 }
 }
