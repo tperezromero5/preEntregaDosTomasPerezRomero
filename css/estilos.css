@@ -31,7 +31,21 @@ footer {
   color: #4cae4f;
 }
 
+.navbar .navbar-nav .nav-link.color-verde:hover {
+  color: #FFFFFF;
+}
+
 .Footer {
+  text-align: center;
+  margin: 20px;
+}
+.Footer .redesFooter .iconosFooter {
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.Footer .parrafoFooter {
   text-align: center;
   font-size: 1rem;
   color: #FFFFFF;
@@ -69,10 +83,10 @@ footer {
   display: inline-block;
   width: 40vh;
   height: 40vh;
-  transition: height 2s;
+  transition: height 3s;
 }
 .contenedor-index .Convenios .ImagenesConvenios:hover {
-  height: 60vh;
+  height: 50vh;
 }
 
 .mainActividades .TituloActividades {
@@ -81,6 +95,14 @@ footer {
   background-color: #043905;
   text-align: center;
   color: #FFFFFF;
+}
+.mainActividades .sectionActividades {
+  text-align: center;
+}
+.mainActividades .sectionActividades .divPilates .imagen-pilates {
+  width: 50vh;
+  height: 50vh;
+  text-align: center;
 }
 .mainActividades .sectionActividades .SubtituloActividades {
   font-family: "Poppins", sans-serif;
@@ -97,6 +119,7 @@ footer {
 .mainActividades .sectionActividades .imagen-pilates {
   width: 50vh;
   height: 50vh;
+  text-align: center;
 }
 .mainActividades .sectionActividades .imagen-gimnasio {
   width: 50vh;
@@ -142,27 +165,47 @@ footer {
   color: #FFFFFF;
   text-align: center;
 }
-.divTituloLesiones .TituloLesiones {
-  color: #FFFFFF;
-  color: #FFFFFF;
-}
 
 .SectionLesiones {
   text-align: center;
 }
 .SectionLesiones .ImagenesLesiones {
-  height: 30vh;
-  width: 30vh;
+  height: 50vh;
+  width: 50vh;
 }
 
+/*no anido porque se reutiliza la clase*/
 .textoLesiones {
   color: #FFFFFF;
   text-align: center;
+  font-size: 1rem;
+  margin-left: 50px;
+  margin-right: 50px;
 } /*no anido porque se reutiliza la clase*/
+.TituloLesiones {
+  color: #FFFFFF;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
 .mainContacto {
   background-color: #043905;
   justify-content: center;
   align-items: center;
+}
+.mainContacto .iconosContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContacto .iconosContacto .iconos {
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 30px;
+  transition: all 300ms;
+}
+.mainContacto .iconosContacto .iconos:hover {
+  transform: scale(1.2);
 }
 .mainContacto .TituloContacto {
   text-align: center;
@@ -190,4 +233,13 @@ footer {
 }
 .mainContacto .Formulario .divFormulario .formularioMapa input ::placeholder {
   color: black; /*intente cambiar el color de la fuente del placeholder pero desde coder ask me dijeron que  no es posible utilizando html y css*/
+}
+
+.main404 .titulo404 {
+  font-size: 2rem;
+  text-align: center;
+  background-color: #043905;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
 }/*# sourceMappingURL=estilos.css.map */

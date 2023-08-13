@@ -1,0 +1,10 @@
+.main404{
+.titulo404{
+    font-size: $letra-titulo;
+    text-align:$centrar-texto;
+    background-color:map-get($colores, fondo );
+    font-family:$fuente-principal;
+    font-weight: 700;
+    color:map-get($colores, letras );
+}
+}

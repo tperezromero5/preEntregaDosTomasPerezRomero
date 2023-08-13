@@ -1,3 +1,4 @@
+@import 'mixins.scss';
 .mainActividades{
     .TituloActividades{
         font-family:$fuente-principal;
@@ -7,6 +8,14 @@
     color:map-get($colores, letras );
     }
     .sectionActividades{
+        text-align: center;
+        .divPilates{
+            .imagen-pilates{
+                width:50vh;
+                height:50vh;
+                text-align: center;
+            }
+        }
         .SubtituloActividades{
         font-family:$fuente-principal;
         font-size:$letra-subtitulo;
@@ -22,6 +31,8 @@
         .imagen-pilates{
             width:50vh;
             height:50vh;
+            text-align: center;
+            
         }
         .imagen-gimnasio{
             width:50vh;

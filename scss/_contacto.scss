@@ -1,7 +1,20 @@
+@import 'mixins.scss';
 .mainContacto{
     background-color:map-get($colores, fondo );
     justify-content:$centrar-texto;
     align-items:$centrar-texto;
+    .iconosContacto{
+        @include flex-align-center (center,center);
+        .iconos{
+            color:$color-Iconos;
+            padding: 10px;
+            font-size: 30px;
+            transition: all 300ms;
+        }
+        .iconos:hover{
+            transform: scale(1.2);
+        }
+    }
     .TituloContacto{
         text-align: $centrar-texto;
         color: map-get($colores, letras );

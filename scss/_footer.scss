@@ -1,6 +1,18 @@
 .Footer{
     text-align:$centrar-texto;
-    font-size: 1rem;
+    margin: 20px;
+    .redesFooter{
+        .iconosFooter{
+        color:$color-Iconos;
+        padding: 10px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        }
+    }
+    .parrafoFooter{
+        text-align:$centrar-texto;
+        font-size: 1rem;
         color:map-get($colores, letras );
         font-family:$fuente-principal;
-    }
+        }
+}
