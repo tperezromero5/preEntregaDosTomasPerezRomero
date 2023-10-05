@@ -1,33 +1,85 @@
-function mostrarPlanes() {
-    const planes = {
-        1: { nombre: "Gym 2 veces por semana", precio: 3200 },
-        2: { nombre: "Gym 3 veces por semana", precio: 3800 },
-        3: { nombre: "Pilates 2 veces por semana", precio: 3000 },
-        4: { nombre: "Gym+pilates 2 veces por semana", precio: 4500 },
-        5: { nombre: "Gym/pilates libre", precio: 4800 },
-    }
-    const planesSeleccionados =[]
+// Obtener referencias a los elementos del formulario
+/*const planForm = document.getElementById('planForm');
+const precioTotalSpan = document.getElementById('precioTotal');
+const calcularPrecioButton = document.getElementById('calcularPrecio');
 
-    let entrada = prompt("Hola bienvenido/a a la pagina oficial de Rehavita Espacio Integral, por favor escribí tu nombre acá abajo para poder mostrarte los planes disponibles")
-    while (entrada !=="") {
-        let plan= parseInt(prompt("Hola " + entrada + " elige el plan que más te guste:\n1-Gym 2 veces por semana\n2-Gym 3 veces por semana\n3-Pilates 2 veces por semana\n4-Gym+pilates 2 veces por semana\n5-Gym/pilates libre"))
-
-        if (planes[plan]) {
-        planesSeleccionados.push(planes[plan]);
-        alert("Seleccionaste el plan número " + plan + ". El precio total de este plan es $" + planes[plan].precio + " por mes");
-        } else {
-        alert("Opción no válida");
-        }
-        entrada = prompt("Si deseas agregar otro plan, escribí tu nombre nuevamente. De lo contrario, presiona Enter para finalizar.");
-        
-        if (entrada === "") {
-            // Función de orden superior para calcular el precio total de los planes seleccionados
-            const calcularPrecioTotal = (planesSeleccionados) => {
-            return planesSeleccionados.reduce((total, plan) => total + plan.precio, 0);
-            };
+// Agregar un controlador de eventos para el botón "Calcular Precio"
+calcularPrecioButton.addEventListener('click', function () {
+    // Obtener todos los planes seleccionados
+    const planesSeleccionados = [];
+    const planCheckboxes = document.querySelectorAll('input[name="plan"]:checked');
     
-            const precioTotal = calcularPrecioTotal(planesSeleccionados);
-            alert("Te agradecemos tu visita, " + entrada + ". El precio total de los planes seleccionados es $" + precioTotal + " Final por mes. ¡Gracias por elegirnos!");}
+    planCheckboxes.forEach(function (checkbox) {
+        planesSeleccionados.push(checkbox.value);
+    });
+
+    // Calcular el precio total de los planes seleccionados
+    let precioTotal = 0;
+    for (const plan of planesSeleccionados) {
+        if (plan === "Gym 2 veces por semana") {
+            precioTotal += 3200;
+        } else if (plan === "Gym 3 veces por semana") {
+            precioTotal += 3800;
+        } else if (plan === "Pilates 2 veces por semana") {
+            precioTotal += 3000;
+        } else if (plan === "Gym+pilates 2 veces por semana") {
+            precioTotal += 4500;
+        } else if (plan === "Gym/pilates libre") {
+            precioTotal += 4800;
+        }
     }
+
+    // Mostrar el precio total en la página
+    precioTotalSpan.textContent = `$${precioTotal}`;
+});
+*/
+// Obtener el precio total almacenado en localStorage, si existe
+let precioTotal = localStorage.getItem('precioTotal');
+if (precioTotal === null) {
+    // Si no hay un valor en localStorage, inicializarlo a 0
+    precioTotal = 0;
+} else {
+    // Convertir el valor almacenado de cadena a número
+    precioTotal = parseFloat(precioTotal);
 }
-mostrarPlanes();
+
+// Obtener referencias a los elementos del formulario
+const planForm = document.getElementById('planForm');
+const precioTotalSpan = document.getElementById('precioTotal');
+const calcularPrecioButton = document.getElementById('calcularPrecio');
+
+// Agregar un controlador de eventos para el botón "Calcular Precio"
+calcularPrecioButton.addEventListener('click', function () {
+    // Obtener todos los planes seleccionados
+    const planesSeleccionados = [];
+    const planCheckboxes = document.querySelectorAll('input[name="plan"]:checked');
+
+    planCheckboxes.forEach(function (checkbox) {
+        planesSeleccionados.push(checkbox.value);
+    });
+
+    // Calcular el precio total de los planes seleccionados
+    let nuevoPrecioTotal = 0;
+    for (const plan of planesSeleccionados) {
+        if (plan === "Gym 2 veces por semana") {
+            nuevoPrecioTotal += 3200;
+        } else if (plan === "Gym 3 veces por semana") {
+            nuevoPrecioTotal += 3800;
+        } else if (plan === "Pilates 2 veces por semana") {
+            nuevoPrecioTotal += 3000;
+        } else if (plan === "Gym+pilates 2 veces por semana") {
+            nuevoPrecioTotal += 4500;
+        } else if (plan === "Gym/pilates libre") {
+            nuevoPrecioTotal += 4800;
+        }
+    }
+
+    // Guardar el nuevo precio total en localStorage
+    localStorage.setItem('precioTotal', nuevoPrecioTotal);
+
+    // Mostrar el precio total en la página
+    precioTotalSpan.textContent = `$${nuevoPrecioTotal.toFixed(2)}`;
+});
+
+// Mostrar el precio total inicial en la página
+precioTotalSpan.textContent = `$${precioTotal.toFixed(2)}`;

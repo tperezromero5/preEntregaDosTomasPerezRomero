@@ -6,6 +6,7 @@
 body{
     font-family: $fuente-principal;
     background-color: map-get($colores, fondo );
+    color: map-get($colores, letras );
 }
 header{
     height: 20%;

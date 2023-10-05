@@ -8,6 +8,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #043905;
+  color: #FFFFFF;
 }
 
 header {
@@ -207,7 +208,7 @@ footer {
 .mainContacto .iconosContacto .iconos:hover {
   transform: scale(1.2);
 }
-.mainContacto .TituloContacto {
+.mainContacto .TitulosContacto {
   text-align: center;
   color: #FFFFFF;
 }
@@ -220,7 +221,7 @@ footer {
 }
 .mainContacto .Formulario .divFormulario {
   padding: 10px;
-  color: black;
+  color: #FFFFFF;
 }
 .mainContacto .Formulario .divFormulario .boton {
   border-radius: 0;
@@ -231,8 +232,8 @@ footer {
   border-radius: 0;
   background-color: #4cae4f;
 }
-.mainContacto .Formulario .divFormulario .formularioMapa input ::placeholder {
-  color: black; /*intente cambiar el color de la fuente del placeholder pero desde coder ask me dijeron que  no es posible utilizando html y css*/
+.mainContacto .fraseTotal {
+  color: #FFFFFF;
 }
 
 .main404 .titulo404 {

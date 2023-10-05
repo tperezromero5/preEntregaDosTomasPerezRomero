@@ -15,10 +15,11 @@
             transform: scale(1.2);
         }
     }
-    .TituloContacto{
+    .TitulosContacto{
         text-align: $centrar-texto;
         color: map-get($colores, letras );
     }
+    .subtituloContacto{}
     .Formulario{
         justify-content:$centrar-texto;
         align-items:$centrar-texto;
@@ -27,7 +28,7 @@
         padding: 10px;
         .divFormulario{
             padding: 10px;
-            color: black;
+            color: map-get($colores, letras );
             .boton{
                 border-radius: 0;
                 background-color: #4cae4f;
@@ -36,10 +37,9 @@
             .formularioMapa{
                 border-radius: 0;
                 background-color: #4cae4f;
-                input ::placeholder{
-                    color: black; /*intente cambiar el color de la fuente del placeholder pero desde coder ask me dijeron que  no es posible utilizando html y css*/
-                }
             }
         }
+    }.fraseTotal{
+        color: map-get($colores, letras );
     }
 }
