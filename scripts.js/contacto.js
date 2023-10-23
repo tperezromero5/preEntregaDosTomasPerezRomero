@@ -22,7 +22,7 @@ function guardarPrecioTotal(precioTotal) {
     });
 }
 
-fetch('./opiniones.json')
+fetch('../opiniones.json')
 .then(response => response.json())
 .then(data => {
     const reseñas = data.reseñas;
