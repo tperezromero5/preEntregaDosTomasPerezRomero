@@ -1,0 +1,19 @@
+{
+    "reseñas": [
+    {
+        "nombre": "Agustin Sosa",
+        "opinión": "Destaco la buena limpieza y orden de todo el lugar. Todo muy profesional.",
+        "puntuación": 5
+    },
+    {
+        "nombre": "Salvador Tiberio",
+        "opinión": "En mi caso fui a realizar rehabilitacion. Los box de kinesiologia son comodos y estan bien equipados. La atencion de 10. ",
+        "puntuación": 4
+    },
+    {
+        "nombre": "Tomás Rodriguez",
+        "opinión": "Fui a averiguar para empezar clases de pilates y me atendieron de forma muy amable. Voy a empezar a entrenar para llegar al verano.",
+        "puntuación": 4.5 
+    }
+    ]
+}

@@ -1,51 +1,3 @@
-/*let precioTotal = obtenerPrecioTotalGuardado()
-const planForm = document.getElementById('planForm');
-const precioTotalSpan = document.getElementById('precioTotal');
-const calcularPrecioButton = document.getElementById('calcularPrecio');
-
-calcularPrecioButton.addEventListener('click', function () {
-    const planesSeleccionados = [];
-    const planCheckboxes = document.querySelectorAll('input[name="plan"]:checked');
-    
-    planCheckboxes.forEach(function (checkbox) {
-        planesSeleccionados.push(checkbox.value);
-    });
-
-    let nuevoPrecioTotal = 0;
-    for (const plan of planesSeleccionados) {
-        if (plan === "Gym 2 veces por semana") {
-            nuevoPrecioTotal += 3200;
-        } else if (plan === "Gym 3 veces por semana") {
-            nuevoPrecioTotal += 3800;
-        } else if (plan === "Pilates 2 veces por semana") {
-            nuevoPrecioTotal += 3000;
-        } else if (plan === "Gym+pilates 2 veces por semana") {
-            nuevoPrecioTotal += 4500;
-        } else if (plan === "Gym/pilates libre") {
-            nuevoPrecioTotal += 4800;
-        }
-    }
-
-    guardarPrecioTotal(nuevoPrecioTotal);
-
-    precioTotalSpan.textContent = `$${nuevoPrecioTotal.toFixed(2)}`;
-});
-
-precioTotalSpan.textContent = `$${precioTotal.toFixed(2)}`;
-
-function obtenerPrecioTotalGuardado() {
-    const precioTotalJSON = localStorage.getItem('precioTotalJSON');
-    if (precioTotalJSON) {
-        return parseFloat(JSON.parse(precioTotalJSON));
-    } else {
-        return 0;
-    }
-}
-
-function guardarPrecioTotal(precioTotal) {
-    localStorage.setItem('precioTotalJSON', JSON.stringify(precioTotal));
-}
-*/
 const planForm = document.getElementById('planForm');
 const precioTotalSpan = document.getElementById('precioTotal');
 const calcularPrecioButton = document.getElementById('calcularPrecio');
@@ -69,6 +21,40 @@ function guardarPrecioTotal(precioTotal) {
         resolve(precioTotal);
     });
 }
+
+fetch('./opiniones.json')
+.then(response => response.json())
+.then(data => {
+    const reseñas = data.reseñas;
+
+    // Mostrar las reseñas en tu página
+    const reseñasContainer = document.getElementById('reseñasContainer');
+
+    reseñas.forEach(reseña => {
+        const reseñaElement = document.createElement('div');
+        reseñaElement.classList.add('reseña');
+
+        const nombreElement = document.createElement('p');
+        nombreElement.textContent = `Nombre: ${reseña.nombre}`;
+
+        const opiniónElement = document.createElement('p');
+        opiniónElement.textContent = `Opinión: ${reseña.opinión}`;
+
+        const puntuaciónElement = document.createElement('p');
+        puntuaciónElement.textContent = `Puntuación: ${reseña.puntuación}`;
+
+        reseñaElement.appendChild(nombreElement);
+        reseñaElement.appendChild(opiniónElement);
+        reseñaElement.appendChild(puntuaciónElement);
+
+        reseñasContainer.appendChild(reseñaElement);
+    });
+
+    console.log('Datos de opiniones.json leídos con éxito:', reseñas);
+})
+.catch(error => {
+    console.error('Error al cargar los datos de opiniones.json:', error);
+});
 
 calcularPrecioButton.addEventListener('click', () => {
     const planCheckboxes = document.querySelectorAll('input[name="plan"]:checked');
