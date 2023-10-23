@@ -23,38 +23,36 @@ function guardarPrecioTotal(precioTotal) {
 }
 
 fetch('../opiniones.json')
-.then(response => response.json())
-.then(data => {
-    const reseñas = data.reseñas;
+    .then(response => response.json())
+    .then(data => {
+        const reseñas = data.reseñas;
 
-    // Mostrar las reseñas en tu página
-    const reseñasContainer = document.getElementById('reseñasContainer');
+        // Mostrar las reseñas en tu página
+        const reseñasContainer = document.getElementById('reseñasContainer');
 
-    reseñas.forEach(reseña => {
-        const reseñaElement = document.createElement('div');
-        reseñaElement.classList.add('reseña');
+        reseñas.forEach(reseña => {
+            const card = document.createElement('div');
+            card.classList.add('card');
 
-        const nombreElement = document.createElement('p');
-        nombreElement.textContent = `Nombre: ${reseña.nombre}`;
+            const nombreElement = document.createElement('p');
+            nombreElement.textContent = `Nombre: ${reseña.nombre}`;
 
-        const opiniónElement = document.createElement('p');
-        opiniónElement.textContent = `Opinión: ${reseña.opinión}`;
+            const opiniónElement = document.createElement('p');
+            opiniónElement.textContent = `Opinión: ${reseña.opinión}`;
 
-        const puntuaciónElement = document.createElement('p');
-        puntuaciónElement.textContent = `Puntuación: ${reseña.puntuación}`;
+            const puntuaciónElement = document.createElement('p');
+            puntuaciónElement.textContent = `Puntuación: ${reseña.puntuación}`;
 
-        reseñaElement.appendChild(nombreElement);
-        reseñaElement.appendChild(opiniónElement);
-        reseñaElement.appendChild(puntuaciónElement);
+            card.appendChild(nombreElement);
+            card.appendChild(opiniónElement);
+            card.appendChild(puntuaciónElement);
 
-        reseñasContainer.appendChild(reseñaElement);
+            reseñasContainer.appendChild(card);
+        });
+    })
+    .catch(error => {
+        console.error('Error al cargar los datos de opiniones.json:', error);
     });
-
-    console.log('Datos de opiniones.json leídos con éxito:', reseñas);
-})
-.catch(error => {
-    console.error('Error al cargar los datos de opiniones.json:', error);
-});
 
 calcularPrecioButton.addEventListener('click', () => {
     const planCheckboxes = document.querySelectorAll('input[name="plan"]:checked');

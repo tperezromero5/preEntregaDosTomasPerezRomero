@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap");
 * {
   padding: 0;
@@ -234,6 +235,16 @@ footer {
 }
 .mainContacto .fraseTotal {
   color: #FFFFFF;
+}
+.mainContacto .reseñaContainer {
+  color: black;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 6rem;
+  border-radius: 5px;
+  border-color: black;
 }
 
 .main404 .titulo404 {

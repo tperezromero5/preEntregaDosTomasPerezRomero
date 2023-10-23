@@ -41,4 +41,14 @@
     }.fraseTotal{
         color: map-get($colores, letras );
     }
+    .reseñaContainer{
+        color: black;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        margin-top: 2.5rem;
+        padding: 6rem;
+        border-radius: 5px;
+        border-color: black;
+    }
 }
